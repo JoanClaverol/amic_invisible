@@ -39,20 +39,17 @@ class generador_amic_invisible():
             print(amic)
             amic_seleccionat = amic
             self.trobar_parella(amic)
-            # try: 
             counter = 0
             while amic_seleccionat == amic or amic_seleccionat == self.parella:
-                counter += 1
                 amic_seleccionat = choice(resta_amic_inv)
                 print(f'{amic} {self.parella} {amic_seleccionat}')
                 if counter > len(self.flat_amics) * 5: 
                     self.genera_amics_invisibles()
                     break
+                counter += 1
             self.amics_invisibles.append([amic, amic_seleccionat])
             resta_amic_inv.remove(amic_seleccionat)
             print(resta_amic_inv)
-            # except: 
-            #     self.genera_amics_invisibles()
 
 amics = [
     ['Jordi', 'MCarmen'],
