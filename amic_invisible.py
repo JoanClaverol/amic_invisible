@@ -55,7 +55,8 @@ amics = [
     "Cristina",
     "Joel",
     ["Alberto", "Pili"],
-    ["Roger", "Txell"],
+    "Roger",
+    "Martin",
     ["Joan", "Nuria"],
 ]
 
